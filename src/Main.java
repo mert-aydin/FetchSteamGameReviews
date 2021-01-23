@@ -75,7 +75,7 @@ public class Main {
         for (int i = map.size() - 1; i >= 0; i--)
             if (Integer.parseInt(map.values().toArray()[i].toString()) >= Parameters.FREQUENCY_THRESHOLD * Parameters.REVIEW_COUNT)
                 if (!map.keySet().toArray()[i].equals("") && !map.keySet().toArray()[i].equals("\n")) {
-                    //System.out.println(map.keySet().toArray()[i] + ": " + map.values().toArray()[i]);
+                    // System.out.println(map.keySet().toArray()[i] + ": " + map.values().toArray()[i]);
                     lines.add(map.keySet().toArray()[i] + ": " + map.values().toArray()[i]);
 
                 }
