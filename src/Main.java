@@ -56,7 +56,7 @@ public class Main {
 
         for (int i = 0; i < Parameters.REVIEW_COUNT; i += 20) {
             try {
-                game.getReviewsArrayList().addAll((reviewsInArrayList(fetchReviewsInJson(game.getGameId(), i))));
+                game.getReviewsArrayList().addAll((reviewsToArrayList(fetchReviewsInJson(game.getGameId(), i))));
             } catch (IOException ignored) {
             }
         }
@@ -85,7 +85,7 @@ public class Main {
 
     }
 
-    private static ArrayList<String> reviewsInArrayList(String reviews) {
+    private static ArrayList<String> reviewsToArrayList(String reviews) {
 
         JSONObject object = new JSONObject(reviews);
         ArrayList<String> reviewsOfAGame = new ArrayList<>();
