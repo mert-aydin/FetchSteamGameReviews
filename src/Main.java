@@ -37,11 +37,15 @@ public class Main {
                 Parameters.ZUP_X};
 
         for (String aaaGameId : aaaGameIds) {
+            System.out.print("Processing Game ID " + aaaGameId + "... ");
             printResults(new Game(aaaGameId, new ArrayList<>()), "aaa");
+            System.out.println("DONE");
         }
-
+      
         for (String indieGameId : indieGameIds) {
+            System.out.print("Processing Game ID " + indieGameId + "... ");
             printResults(new Game(indieGameId, new ArrayList<>()), "indie");
+            System.out.println("DONE");
         }
 
     }
