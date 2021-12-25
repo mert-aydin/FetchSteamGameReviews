@@ -79,7 +79,7 @@ public class Main {
             }
         }
 
-        Path file = Paths.get(gameType + "_" + game.getGameId() + ".txt");
+        Path file = Paths.get("out/" + gameType + "_" + game.getGameId() + ".txt");
         Files.write(file, lines, StandardCharsets.UTF_8);
     }
 
